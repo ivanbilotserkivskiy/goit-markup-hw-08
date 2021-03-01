@@ -193,6 +193,7 @@ img {
 
 .team {
   background: #F5F4FA;
+  padding: 30px 0;
 }
 
 .team .container {
@@ -209,6 +210,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .team-list-div {
@@ -216,23 +219,33 @@ img {
   width: 450px;
   height: 162px;
   background: #ffffff;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item-title {
-  font-family: var(--text-font);
+  font-family: var(--title-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  padding-top: 30px;
 }
 
 .team-list-item-text {
   font-family: var(--text-font);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: var(--text-color);
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */

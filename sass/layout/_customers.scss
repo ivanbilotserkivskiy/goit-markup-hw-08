@@ -1,3 +1,19 @@
+// .customers {
+//     & .container{
+//             margin{
+//                 left: auto;
+//                 right: auto;
+//             }
+//     }
+// }
+
+.customers-title {
+    @include font-title($fs:28px, $lh:33px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
 // /* Customers */
 // .customers {
 //     padding-top: 95px;
