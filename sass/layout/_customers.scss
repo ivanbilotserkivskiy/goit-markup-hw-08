@@ -31,9 +31,7 @@
     }
 }
 .customers-list-item-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     position: absolute;
     width: 210px;
     height: 90px;

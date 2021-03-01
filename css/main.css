@@ -53,9 +53,6 @@ img {
 }
 
 .social-list-item-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -108,7 +105,7 @@ img {
   --text-color: #757575;
 }
 
-.footer-logotype, .footer-address-location, .footer-email-link, .footer-tel-link, .footer-social-title, .footer-form-label, .footer-form-input, .footer-form-button {
+.social-list-item-link, .team .container, .customers-list-item-link, .footer-logotype, .footer-address-location, .footer-email-link, .footer-tel-link, .footer-social-title, .footer-form-label, .footer-form-input, .footer-form-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,9 +207,6 @@ img {
 }
 
 .team .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -303,9 +297,6 @@ img {
 }
 
 .customers-list-item-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   width: 210px;
   height: 90px;

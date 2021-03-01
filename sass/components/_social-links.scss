@@ -3,9 +3,7 @@
     justify-content: center;
     }
 .social-list-item-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     background-color: #ffffff;
