@@ -1,3 +1,49 @@
+.adv {
+    width: 100%;
+    & .container {
+        width: 100%;
+    }
+}
+.adv-list-item-icon {
+    width: 70px;
+    height: 70px;
+}
+.adv-list-icon-back-div {
+    width: 450px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.adv-list-item-title {
+    font-family: var(--text-font);
+    @include font-title($fs:14px, $lh:16px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+.adv-list-item-text {
+    font-family: var(--text-font);
+    @include font($fs:14px, $lh:24px);
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
 // /* Adventages */
 // .adv {
 //     padding-bottom: 95px;

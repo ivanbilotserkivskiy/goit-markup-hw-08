@@ -1,3 +1,39 @@
+.team {
+    background: #F5F4FA;
+    & .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.team-title {
+    @include font-title($fs:28px, $lh:33px);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-color);
+
+}
+.team-list-div {
+    text-align: center;
+    width: 450px;
+    height: 162px;
+    background: #ffffff;
+}
+.team-list-item-title {
+    font-family: var(--title-font);
+    @include title-font($fw:500, $fs:16px, $lh:19px);
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+.team-list-item-text {
+    font-family: var(--text-font);
+    @include font($fs:16px, $lh:19px);
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
 // /* About us */
 // .aboutus {
 //     background-color: #F5F4FA;

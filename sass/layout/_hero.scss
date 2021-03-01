@@ -10,12 +10,12 @@
     background-size: cover;
    
     & .container {
-        display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
+    margin-bottom: 60px;
 }
 .hero-title {
     font-family: var(--text-font);
@@ -32,12 +32,12 @@
     height: 50px;
     left: 140px;
     top: 292px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    @include title-font($fs:16px, $lh:30px);
     color: #ffffff; 
     cursor: pointer;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    @include font-title($fs:16px, $lh:30px);
     }
 
 

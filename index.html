@@ -45,40 +45,44 @@
         <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
-        <!--END HERO-->
+        <!-- END HERO -->
     <!--advantages-->
-   <!-- <section class="adv">
+   <section class="adv">
        <div class="container">
-        <h2 class="adv-title">Преимущества</h2>
+        <h2 class="adv-title visually-hidden">Преимущества</h2>
         <ul class="adv-liste list">
                 <li class="adv-icon-list-item">
                  
                 </li>
             <li class="adv-list-item">
+                <div class="adv-list-icon-back-div">
                 <svg class="adv-list-item-icon">
                     <use href="./images/sprite.svg#icon-antenna-1"></use>
-                </svg>
+                </svg></div>
                 <h3 class="adv-list-item-title">Внимание к деталям</h3>
                 <p class="adv-list-item-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="adv-list-item">
+                <div class="adv-list-icon-back-div">
                 <svg class="adv-list-item-icon">
                     <use href="./images/sprite.svg#icon-clock-1"></use>
-                </svg>
+                </svg></div>
                 <h3 class="adv-list-item-title">Пунктуальность</h3>
                 <p class="adv-list-item-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="adv-list-item">
+                <div class="adv-list-icon-back-div">
                 <svg class="adv-list-item-icon">
                     <use href="./images/sprite.svg#icon-diagram-1"></use>
-                </svg>
+                </svg></div>
                 <h3 class="adv-list-item-title">Планирование</h3>
                 <p class="adv-list-item-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="adv-list-item">
+                <div class="adv-list-icon-back-div">
                 <svg class="adv-list-item-icon">
                     <use href="./images/sprite.svg#icon-astronaut-1"></use>
-                </svg>
+                </svg></div>
                 <h3 class="adv-list-item-title">Современные технологии</h3>
                 <p class="adv-list-item-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
@@ -117,16 +121,39 @@
         </ul>
         </div>
     </section>  -->
-    <!--about us-->
-    <!-- <section class="aboutus">
+    <!-- about us -->
+    <section class="team">
         <div class="container">
-        <h2 class="aboutus-title">Наша команда</h2>
-        <ul class="aboutus-list list">
-            <li class="aboutus-list-item">
-                <img class="aboutus-list-item-images" src="./images/img.jpg" alt="Игорь Демьяненко - Product Designer" width="270" height="260">
-                <div class="aboutus-list-div">
-                <h3 class="aboutus-list-item-title">Игорь Демьяненко</h3>
-                <p class="aboutus-list-item-text" lang="en">Product Designer</p>
+        <h2 class="team-title">Наша команда</h2>
+        <ul class="team-list list">
+            <li class="team-list-item">
+                <picture>
+                    <source
+                        srcset="./images/dekstop/,  ./images/dekstop/"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source
+                        srcset="./images/dekstop/, ./images/dekstop/"
+                        media="(min-width: 1200px)">
+
+                    <source
+                        srcset="./images/tablet/, ./images/tablet/"
+                        media="(min-width: 768px)" type="image/webp">
+                    <source
+                        srcset="./images/tablet/, ./images/tablet/"
+                        media="(min-width: 768px)">
+                    
+                    <source
+                        srcset="./images/phone/team/IgorDemynenko@1x.webp 1x, ./images/phone/team/IgorDemynenko@2x.webp 2x"
+                        media="(min-width: 480px)" type="image/webp">
+                    <source
+                        srcset="./images/phone/team/IgorDemynenko@1.jpg 1x, ./images/phone/team/IgorDemynenko@2.jpg 2x"
+                        media="(min-width: 480px)">
+                    <img class="about-list-img" src="./images/phone/team/IgorDemynenko@1x.jpg"
+                        alt="мастер стрижет клиента">
+                </picture>
+                <div class="team-list-div">
+                <h3 class="team-list-item-title">Игорь Демьяненко</h3>
+                <p class="team-list-item-text" lang="en">Product Designer</p>
                 <ul class="social-list list">
                     <li class="social-list-item">
                         <a href="" class="social-list-item-link link">
@@ -159,11 +186,34 @@
                 </ul>
                 </div>
             </li>
-            <li class="aboutus-list-item">
-                <img class="aboutus-list-item-images" src="./images/img(1).jpg" alt="Ольга Репина - Frontend Developer" width="270" height="260">
-                <div class="aboutus-list-div">
-                <h3 class="aboutus-list-item-title">Ольга Репина</h3>
-                <p class="aboutus-list-item-text" lang="en">Frontend Developer</p>
+            <li class="team-list-item">
+                <picture>
+                    <source
+                        srcset="./images/dekstop/,  ./images/dekstop/"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source
+                        srcset="./images/dekstop/, ./images/dekstop/"
+                        media="(min-width: 1200px)">
+
+                    <source
+                        srcset="./images/tablet/, ./images/tablet/"
+                        media="(min-width: 768px)" type="image/webp">
+                    <source
+                        srcset="./images/tablet/, ./images/tablet/"
+                        media="(min-width: 768px)">
+                    
+                    <source
+                        srcset="./images/phone/team/OlgaRepina@1x.webp 1x, ./images/phone/team/OlgaRepina@2x.webp 2x"
+                        media="(min-width: 480px)" type="image/webp">
+                    <source
+                        srcset="./images/phone/team/OlgaRepina@1x.jpg 1x, ./images/phone/team/OlgaRepina@2x.jpg 2x"
+                        media="(min-width: 480px)">
+                    <img class="about-list-img" src="./images/phone/team/OlgaRepina@1x.jpg"
+                        alt="мастер стрижет клиента">
+                </picture>
+                <div class="team-list-div">
+                <h3 class="team-list-item-title">Ольга Репина</h3>
+                <p class="team-list-item-text" lang="en">Frontend Developer</p>
                  <ul class="social-list list">
                     <li class="social-list-item">
                         <a href="" class="social-list-item-link link">
@@ -196,11 +246,34 @@
                 </ul>
                 </div>
             </li>
-            <li class="aboutus-list-item">
-                <img class="aboutus-list-item-images" src="./images/img(2).jpg" alt="Николай Тарасов - Marketing" width="270" height="260">
-                <div class="aboutus-list-div">
-                <h3 class="aboutus-list-item-title">Николай Тарасов</h3>
-                <p class="aboutus-list-item-text" lang="en">Marketing</p>
+            <li class="team-list-item">
+                <picture>
+                    <source
+                        srcset="./images/dekstop/,  ./images/dekstop/"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source
+                        srcset="./images/dekstop/, ./images/dekstop/"
+                        media="(min-width: 1200px)">
+
+                    <source
+                        srcset="./images/tablet/, ./images/tablet/"
+                        media="(min-width: 768px)" type="image/webp">
+                    <source
+                        srcset="./images/tablet/, ./images/tablet/"
+                        media="(min-width: 768px)">
+                    
+                    <source
+                        srcset="./images/phone/team/NikolayTarasov@1x.webp 1x, ./images/phone/team/NikolayTarasov@2x.webp 2x"
+                        media="(min-width: 480px)" type="image/webp">
+                    <source
+                        srcset="./images/phone/team/NikolayTarasov@1x.jpg 1x, ./images/phone/team/NikolayTarasov@2x.jpg 2x"
+                        media="(min-width: 480px)">
+                    <img class="about-list-img" src="./images/phone/team/NikolayTarasov@2x.jpg"
+                        alt="мастер стрижет клиента">
+                </picture>
+                <div class="team-list-div">
+                <h3 class="team-list-item-title">Николай Тарасов</h3>
+                <p class="team-list-item-text" lang="en">Marketing</p>
                  <ul class="social-list list">
                     <li class="social-list-item">
                         <a href="" class="social-list-item-link link">
@@ -233,11 +306,34 @@
                 </ul>
                 </div>
             </li>
-            <li class="aboutus-list-item">
-                <img class="aboutus-list-item-images" src="./images/img(3).jpg" alt="Михаил Ермаков - UI Designer" width="270" height="260">
-                <div class="aboutus-list-div">
-                <h3 class="aboutus-list-item-title">Михаил Ермаков</h3>
-                <p class="aboutus-list-item-text" lang="en">UI Designer</p>
+            <li class="team-list-item">
+                <picture>
+                    <source
+                        srcset="./images/dekstop/,  ./images/dekstop/"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source
+                        srcset="./images/dekstop/, ./images/dekstop/"
+                        media="(min-width: 1200px)">
+
+                    <source
+                        srcset="./images/tablet/, ./images/tablet/"
+                        media="(min-width: 768px)" type="image/webp">
+                    <source
+                        srcset="./images/tablet/, ./images/tablet/"
+                        media="(min-width: 768px)">
+                    
+                    <source
+                        srcset="./images/phone/team/MihailErmakov@1x.webp 1x, ./images/phone/team/MihailErmakov@2x.webp 2x"
+                        media="(min-width: 480px)" type="image/webp">
+                    <source
+                        srcset="./images/phone/team/MihailErmakov@1x.jpg 1x, ./images/phone/team/MihailErmakov@2x.jpg 2x"
+                        media="(min-width: 480px)">
+                    <img class="about-list-img" src="./images/phone/team/MihailErmakov@2x.jpg"
+                        alt="мастер стрижет клиента">
+                </picture>
+                <div class="team-list-div">
+                <h3 class="team-list-item-title">Михаил Ермаков</h3>
+                <p class="team-list-item-text" lang="en">UI Designer</p>
                  <ul class="social-list list">
                     <li class="social-list-item">
                         <a href="" class="social-list-item-link link">
@@ -273,7 +369,7 @@
         </ul>
         </div>
     </section>
-    <section class="customers">
+    <!-- <section class="customers">
         <div class="container">
             <h2 class="customers-title">Постоянные клиенты</h2>
             <ul class="customers-list list">
@@ -322,7 +418,7 @@
             </ul>
         
         </div>
-    </section> -->
+    </section>  -->
         <!--END main container-->
      </main>
      <!--Footer container-->

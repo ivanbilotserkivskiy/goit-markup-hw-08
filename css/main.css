@@ -42,7 +42,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 448px;
     margin: 0 auto;
   }
 }
@@ -50,6 +50,7 @@ img {
 .social-list {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
 }
 
 .social-list-item-link {
@@ -96,6 +97,8 @@ img {
   --text-font: "Roboto", sans-serif;
   --logotype-font: "Raleway", sans-serif;
   --accent-color: #2196F3;
+  --title-color:  #212121;
+  --text-color: #757575;
 }
 
 .hero {
@@ -105,10 +108,11 @@ img {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 60px;
 }
 
 .hero .container {
-  display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -131,8 +135,104 @@ img {
   height: 50px;
   left: 140px;
   top: 292px;
-  background: #2196F3;
+  color: #ffffff;
+  cursor: pointer;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+.adv {
+  width: 100%;
+}
+
+.adv .container {
+  width: 100%;
+}
+
+.adv-list-item-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.adv-list-icon-back-div {
+  width: 450px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.adv-list-item-title {
+  font-family: var(--text-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.adv-list-item-text {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.team {
+  background: #F5F4FA;
+}
+
+.team .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.179;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.team-list-div {
+  text-align: center;
+  width: 450px;
+  height: 162px;
+  background: #ffffff;
+}
+
+.team-list-item-title {
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.team-list-item-text {
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
 }
 /*# sourceMappingURL=main.css.map */
