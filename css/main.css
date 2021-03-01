@@ -49,7 +49,6 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
   justify-content: center;
 }
 
@@ -107,6 +106,12 @@ img {
   --accent-color: #2196F3;
   --title-color:  #212121;
   --text-color: #757575;
+}
+
+.footer-logotype, .footer-address-location, .footer-email-link, .footer-tel-link, .footer-social-title, .footer-form-label, .footer-form-input, .footer-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
@@ -351,13 +356,6 @@ img {
   padding: 60px 0;
 }
 
-.footer .container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .footer-logotype {
   text-align: center;
   font-family: var(--logotype-font);
@@ -374,6 +372,7 @@ img {
 }
 
 .footer-address-location {
+  font-style: normal;
   font-family: var(--text-font);
   font-weight: 400;
   font-size: 14px;
@@ -384,6 +383,7 @@ img {
 }
 
 .footer-email-link {
+  font-style: normal;
   font-family: var(--text-font);
   font-weight: 400;
   font-size: 14px;
@@ -394,6 +394,7 @@ img {
 }
 
 .footer-tel-link {
+  font-style: normal;
   font-family: var(--text-font);
   font-weight: 400;
   font-size: 14px;
@@ -449,9 +450,6 @@ img {
 .footer-form-button {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 200px;
   height: 50px;
   left: 140px;

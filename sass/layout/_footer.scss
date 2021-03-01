@@ -2,16 +2,10 @@
     background-color: #2F303A;
     text-align: center;
     padding: 60px 0;
-    & .container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
 }
 
 .footer-logotype {
-    @extend .align;
+    @extend %align;
     text-align: center;
     font-family: var(--logotype-font);
     color: var(--accent-color);
@@ -23,7 +17,8 @@
     color: #ffffff;
 }
 .footer-address-location {
-    @extend .align;
+    font-style: normal;
+    @extend %align;
     font-family: var(--text-font);
     @include font($fs:14px, $lh:24px);
     letter-spacing: 0.03em;
@@ -31,7 +26,8 @@
     margin-bottom: 10px;
 }
 .footer-email-link {  
-    @extend .align;
+    font-style: normal;
+    @extend %align;
     font-family: var(--text-font);
     @include font ($fs:14px, $lh:24px);
     letter-spacing: 0.03em;
@@ -39,7 +35,8 @@
     margin-bottom: 10px;
 }
 .footer-tel-link {
-    @extend .align;
+    font-style: normal;
+    @extend %align;
     font-family: var(--text-font);
     @include font ($fs:14px, $lh:24px);
     letter-spacing: 0.03em;
@@ -47,7 +44,7 @@
     margin-bottom: 60px;
 }
 .footer-social-title{
-    @extend .align;
+    @extend %align;
     font-family: var(--text-font);
     @include font-title ($fs:14px, $lh:16px);
     letter-spacing: 0.03em;
@@ -56,7 +53,7 @@
     margin-bottom: 20px;
 }
 .footer-form-label {
-    @extend .align;
+    @extend %align;
     font-family: var(--text-font);
     @include font-title ($fs:14px, $lh:16px);
     letter-spacing: 0.03em;
@@ -66,7 +63,7 @@
     margin-bottom: 20px;
 }
 .footer-form-input  {
-    @extend .align;
+    @extend %align;
     width: 450px;
     height: 50px;
     background-color: #2F303A;
@@ -86,7 +83,7 @@
 .footer-form-button {
     margin-left: auto;
     margin-right: auto;
-    @extend .align;
+    @extend %align;
     width: 200px;
     height: 50px;
     left: 140px;
