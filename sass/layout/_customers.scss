@@ -1,17 +1,74 @@
-// .customers {
-//     & .container{
-//             margin{
-//                 left: auto;
-//                 right: auto;
-//             }
-//     }
-// }
+.customers {
+    padding: 60px 0;;
+}
 
 .customers-title {
     @include font-title($fs:28px, $lh:33px);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    margin-bottom: 30px;
+}
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.customers-list-item{
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 210px;
+    height: 90px;
+    &:nth-child(2n+1) {
+        margin-right: auto;
+    }
+    &:not(:nth-child(n+5)) {
+        margin-bottom: 30px;
+    }
+        &:hover {
+        border: 1px solid var(--accent-color);
+    }
+}
+.customers-list-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 210px;
+    height: 90px;
+    &:hover .customers-list-item-icon,
+    &:focus .customers-list-item-icon {
+    fill: var(--accent-color);
+}
+}
+.customers-list-item-icon {
+    fill: #AFB1B8;
+}
+
+.customers-list-item-icon1 {
+    width: 45px;
+    height: 49px;
+}
+.customers-list-item-icon2 {
+    width: 40px;
+    height: 52px;
+}
+.customers-list-item-icon3 {
+    width: 41px;
+    height: 42px;
+}
+.customers-list-item-icon4 {
+    width: 80px;
+    height: 42px;
+}
+.customers-list-item-icon5 {
+    width: 59px;
+    height: 47px;
+}
+.customers-list-item-icon6 {
+    width: 88px;
+    height: 45px; 
 }
 
 // /* Customers */
@@ -51,54 +108,7 @@
 //     transition-duration: 250ms;
 //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 // }
-// .customers-list-item-icon1 {
-//     width: 45px;
-//     height: 49px;
-//     margin-top: 20px;
-//     margin-bottom: 20px;
-//     margin-right: 63px;
-//     margin-left: 63px;
-// }
-// .customers-list-item-icon2 {
-//     width: 40px;
-//     height: 52px;
-//     margin-top: 19px;
-//     margin-bottom: 19px;
-//     margin-right: 65px;
-//     margin-left: 65px;
-// }
-// .customers-list-item-icon3 {
-//     width: 41px;
-//     height: 42px;
-//     margin-top: 24px;
-//     margin-bottom: 24px;
-//     margin-right: 64px;
-//     margin-left: 64px;
-// }
-// .customers-list-item-icon4 {
-//     width: 80px;
-//     height: 42px;
-//     margin-top: 24px;
-//     margin-bottom: 24px;
-//     margin-right: 45px;
-//     margin-left: 45px;
-// }
-// .customers-list-item-icon5 {
-//     width: 59px;
-//     height: 47px;
-//     margin-top: 22px;
-//     margin-bottom: 21px;
-//     margin-right: 55px;
-//     margin-left: 56px;
-// }
-// .customers-list-item-icon6 {
-//     width: 88px;
-//     height: 45px;
-//     margin-top: 22px;
-//     margin-bottom: 22px;
-//     margin-right: 40px;
-//     margin-left: 41px;  
-// }
+
 // .customers-list-item-link {
 //     display: block;
 //     width: 170px;
