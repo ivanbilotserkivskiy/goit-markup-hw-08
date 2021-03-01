@@ -73,6 +73,13 @@ img {
   padding: 60px 0;
 }
 
+.footer .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .footer-logotype {
   text-align: center;
   font-family: var(--logotype-font);

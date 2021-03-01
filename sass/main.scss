@@ -1,12 +1,14 @@
 
 @import "./base/common";
 @import "./base/container";
-@import "./utils/mixins";
+
 
 @import "./components/social-links";
 
 @import "./utils/visualy-hidden";
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 
 // @import "./layout/header";
 @import "./layout/hero";
