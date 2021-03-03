@@ -105,10 +105,44 @@ img {
   --text-color: #757575;
 }
 
-.social-list-item-link, .team .container, .customers-list-item-link, .footer-logotype, .footer-address-location, .footer-email-link, .footer-tel-link, .footer-social-title, .footer-form-label, .footer-form-input, .footer-form-button {
+.social-list-item-link, .header .container, .team .container, .customers-list-item-link, .footer-logotype, .footer-address-location, .footer-email-link, .footer-tel-link, .footer-social-title, .footer-form-label, .footer-form-input, .footer-form-button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header .container {
+  justify-content: space-between;
+}
+
+.navigation-list {
+  display: none;
+}
+
+.address-header {
+  display: none;
+}
+
+.logotype {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  font-family: var(--logotype-font);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logotype-light-theme {
+  color: var(--title-color);
+}
+
+.burger-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.burger-icon:hover, .burger-icon:focus {
+  fill: var(--accent-color);
 }
 
 .hero {

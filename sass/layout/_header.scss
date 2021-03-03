@@ -1,3 +1,35 @@
+.header {
+    & .container {
+      @extend %align;
+      justify-content: space-between;
+    }
+}
+
+
+.navigation-list {
+    display: none;
+}
+.address-header {
+    display: none;
+}
+.logotype {
+    @include font ($fw:700, $fs:24px, $lh:28px);
+    font-family: var(--logotype-font);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.logotype-light-theme {
+    color: var(--title-color)
+}
+.burger-icon {
+    width: 40px;
+    height: 40px;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
 // /* --header section-- */
 // .header .container {
 //     display: flex;
