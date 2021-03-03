@@ -1,8 +1,6 @@
 .header {
-    & .container {
-      @extend %align;
-      justify-content: space-between;
-    }
+    height: 60px;
+    @extend %align;
 }
 
 
@@ -17,6 +15,7 @@
     font-family: var(--logotype-font);
     letter-spacing: 0.03em;
     color: var(--accent-color);
+   
 }
 .logotype-light-theme {
     color: var(--title-color)
@@ -29,7 +28,104 @@
         fill: var(--accent-color);
     }
 }
+.mobile-menu {
+    width: 100%;
+    padding: 48px 40px;
+    position: absolute;
+    max-width: 400px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    background-color: #ffffff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+    transform: translateX(-50%) translateY(0%);
+}
+.mobile-close-button,
+.burger-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.close-icon {
+    width: 40px;
+    height: 40px;
+    fill: #000000;
+}
+.mobile-close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    &:hover .close-icon,
+    &:focus .close-icon{
+        fill: var(--accent-color);
+    }
+}
+.mobile-menu-nav-link {
+    display: block;
+    margin-bottom: 36px;
+    @include font ($fw:500, $fs:40px, $lh:47px);
+    font-family: var(--text-font);
+    letter-spacing: 0.02em;
 
+    color: var(--title-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-menu-nav-list {
+    margin-bottom: 302px;
+}
+
+.mobile-menu-email-link {
+    @include font ($fw:500, $fs:24px, $lh:28px);
+    font-family: var(--text-font);
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-menu-tel-link {
+    display: block;
+    margin-bottom: 32px;
+    @include font ($fw:500, $fs:34px, $lh:40px);
+    font-family: var(--text-font);
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-menu-contact-list {
+    margin-bottom: 65px;
+}
+.mobile-menu-social-list {
+    display: flex;
+    align-items: center;
+}
+.mobile-menu-social-link {
+    @include font ($fw:500, $fs:18px, $lh:22px);
+    font-family: var(--text-font);
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    color: var(--accent-color);
+    &::before {
+        content: '';
+        border-left: 1px solid rgba(33, 33, 33, 0.2); 
+        margin-right: 10px;
+    }
+    &:not(last-child){
+        margin-right: 10px;
+    }
+}
 // /* --header section-- */
 // .header .container {
 //     display: flex;

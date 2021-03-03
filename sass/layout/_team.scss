@@ -1,10 +1,7 @@
 .team {
     background: #F5F4FA;
     padding: 30px 0;
-    & .container {
-        @extend %align;
-        flex-direction: column;
-    }
+
 }
 .team-title {
     @include font-title($fs:28px, $lh:33px);
