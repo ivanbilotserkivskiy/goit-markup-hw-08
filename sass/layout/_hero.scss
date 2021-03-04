@@ -12,13 +12,14 @@
 }
 .hero-title {
     font-family: var(--text-font);
-    @include font-title($fw:900, $fs:26px, $lh:42px);
+    @include font($fw:900, $fs:26px, $lh:42px);
     text-transform: uppercase;
     letter-spacing: 0.06em; 
     text-align: center;
     color: #ffffff;
     margin-top: 120px;
     margin-bottom: 30px;
+    width: 360px;
 }
 
 .hero-button {
@@ -31,13 +32,11 @@
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    @include font-title($fs:16px, $lh:30px);
+    @include font($fw:700, $fs:16px, $lh:30px);
     }
 
 
 
-
- 
 
 
 

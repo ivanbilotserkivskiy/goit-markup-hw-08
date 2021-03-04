@@ -3,9 +3,11 @@
     text-align: center;
     padding: 60px 0;
 }
-
+.footer-div {
+    margin-bottom: 60px;
+}
 .footer-logotype {
-    @extend %align;
+    display: inline-block;
     text-align: center;
     font-family: var(--logotype-font);
     color: var(--accent-color);
@@ -18,7 +20,7 @@
 }
 .footer-address-location {
     font-style: normal;
-    @extend %align;
+    display: inline-block;
     font-family: var(--text-font);
     @include font($fs:14px, $lh:24px);
     letter-spacing: 0.03em;
@@ -27,7 +29,7 @@
 }
 .footer-email-link {  
     font-style: normal;
-    @extend %align;
+    display: inline-block;
     font-family: var(--text-font);
     @include font ($fs:14px, $lh:24px);
     letter-spacing: 0.03em;
@@ -36,15 +38,15 @@
 }
 .footer-tel-link {
     font-style: normal;
-    @extend %align;
+    display: inline-block;
     font-family: var(--text-font);
     @include font ($fs:14px, $lh:24px);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 60px;
+
 }
 .footer-social-title{
-    @extend %align;
+    display: inline-block;
     font-family: var(--text-font);
     @include font-title ($fs:14px, $lh:16px);
     letter-spacing: 0.03em;
@@ -52,18 +54,21 @@
     color: #FFFFFF;
     margin-bottom: 20px;
 }
+.footer-form-div{
+    margin-top: 60px;
+}
 .footer-form-label {
-    @extend %align;
+    display: inline-block;
     font-family: var(--text-font);
     @include font-title ($fs:14px, $lh:16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 60px;
+
     margin-bottom: 20px;
 }
 .footer-form-input  {
-    @extend %align;
+    display: inline-block;
     width: 450px;
     height: 50px;
     background-color: #2F303A;
@@ -83,7 +88,7 @@
 .footer-form-button {
     margin-left: auto;
     margin-right: auto;
-    @extend %align;
+    display: inline-block;
     width: 200px;
     height: 50px;
     left: 140px;
@@ -102,7 +107,52 @@
     fill: #ffffff;
 }
 
-
+@media screen and (min-width: 768px) {
+    // .footer{
+    //     padding: 60px 76px;
+    // }
+    .footer-logotype {
+        text-align: start;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .footer-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: 76px;
+        margin-bottom: 0px;
+    }
+    .footer-social-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-right: 89px;
+        }
+        .footer-form-input-div {
+           display: flex;
+           align-self: center;
+           flex-direction: column;
+           align-self: center;
+        }
+        // .footer-form {
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+        .footer-form-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+        }
+}
 
 // /* footer links */
 // .footer {

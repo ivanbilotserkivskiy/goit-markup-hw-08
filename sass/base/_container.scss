@@ -12,13 +12,15 @@
         align-items: center;
         justify-content: space-between;
 }
-    .adv & {
-        width: 450px;
-    }
-    .team & {
-        @extend %align;
-        flex-direction: column;
-    }
+    // .adv & {
+    //     width: 450px;
+    // }
+    // .team & {
+
+    // }
+    // .portfolio & {
+        
+    // }
 }
 
 
@@ -33,7 +35,13 @@
 
 @media screen and (min-width: 768px) {
     .container {
-      width: 720px;
+      width: 738px;
+      .footer & {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
     }
 }
   @media screen and (min-width: 1200px) {
