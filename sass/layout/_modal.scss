@@ -189,7 +189,10 @@
 }
 
 .modal-form-label-license {
-    @extend %align;
+    // display: flex;
+    // align-items: flex-start;
+    // flex-wrap: wrap;
+    vertical-align: middle;
     width: 370px;
     @include font ($fs:14px, $lh:16px);
   
@@ -201,6 +204,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &::before {
         display: inline-block;
+        vertical-align: top;
         content: "";
         background-image: url(../images/Vector.svg);
         width: 16px;
@@ -212,6 +216,9 @@
         transition-property: background-image;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .modal-form-label-license span {
+        vertical-align: middle;
     }
     .modal-form-check-license:checked + &::before {
         background-image: url(../images/iconcheck.svg);

@@ -483,37 +483,31 @@ img {
   .mobile-menu {
     display: none;
   }
+  .logotype {
+    margin-right: 88px;
+  }
   .navigation {
     display: flex;
     align-items: center;
+    margin-right: 80px;
   }
   .navigation-list {
     display: flex;
     align-items: center;
   }
-  .navigation-list:not(:last-child) {
-    margin-right: 40px;
-  }
   .navigation-list-item {
     position: relative;
   }
-  .address-list-item-curent::after {
-    content: '';
-    position: absolute;
-    display: flex;
-    background: #2196F3;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    transform-origin: center;
-    top: 46.5px;
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
   }
   .navigation-list-item-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.142;
+    line-height: 1.143;
+    font-family: var(--text-font);
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-color);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -521,29 +515,35 @@ img {
   .navigation-list-item-link:hover, .navigation-list-item-link:focus {
     color: var(--accent-color);
   }
+  .navigation-list-item-curent {
+    color: var(--accent-color);
+  }
+  .navigation-list-item-curent::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    background: var(--accent-color);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    transform-origin: center;
+    top: 36px;
+  }
   .address-header {
     display: flex;
     align-items: center;
     margin-left: auto;
   }
   .address-list {
-    display: flex;
-    align-items: center;
-  }
-  .address-list-item {
-    display: flex;
-    align-items: center;
-  }
-  .address-list-item:not(:last-child) {
-    margin-right: 50px;
+    display: inline-block;
   }
   .email-link {
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.167;
+    font-family: var(--text-font);
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--text-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -551,12 +551,12 @@ img {
     color: var(--accent-color);
   }
   .tel-link {
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.167;
+    font-family: var(--text-font);
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--text-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -565,10 +565,10 @@ img {
   }
   .mail-icon {
     align-items: center;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: #757575;
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: var(--text-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -580,9 +580,9 @@ img {
   .tel-icon {
     margin: 0 auto;
     width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: #757575;
+    height: 14px;
+    margin-right: 8px;
+    fill: var(--text-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -647,6 +647,13 @@ img {
 .portfolio_button-chosen {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-buttons-list {
+    justify-content: center;
+  }
 }
 
 /* End portfolio buttons */
@@ -656,7 +663,6 @@ img {
 }
 
 .portfolio-list-item {
-  border: 1px solid #EEEEEE;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -689,6 +695,8 @@ img {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+  border: 1px solid #EEEEEE;
+  border-top: none;
 }
 
 .portfolio-list-item-link-div {
@@ -736,6 +744,20 @@ img {
 
 .portfolio-list-item-link:focus .portfolio-image-div-text {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .portfolio-list-item:nth-child(2n+1) {
+    margin-right: auto;
+  }
+  .portfolio-image-div-text {
+    padding: 49px 24px;
+  }
 }
 
 /* end portfolio */
