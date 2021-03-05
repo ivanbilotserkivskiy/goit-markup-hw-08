@@ -414,6 +414,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+  }
   .logotype {
     font-weight: 700;
     font-size: 26px;
@@ -491,7 +494,7 @@ img {
     height: 600px;
   }
   .hero-title {
-    width: 696px;
+    width: 674px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
@@ -500,31 +503,31 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
-    background-image: url("./../images/mobile-back@2x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/mobile-back@2x.png");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("./../images/tablet-back@1x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/tablet-back@1x.png");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url("./../images/tablet-back@2x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/tablet-back@2x.png");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("./../images/dekstop-back@1x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/dekstop-back@1x.png");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url("./../images/dekstop-back@2x.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/dekstop-back@2x.png");
   }
 }
 
@@ -629,20 +632,20 @@ img {
     padding-bottom: 94px;
   }
   .work-title {
+    font-family: var(--text-font);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.167;
+    color: var(--title-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    display: none;
   }
   .work-list-item {
     position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: -15px;
   }
   .work-list-item:not(:last-child) {
     margin-right: 30px;
@@ -654,9 +657,10 @@ img {
     align-content: center;
   }
   .work-list-item-images-text {
+    font-family: var(--text-font);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.142px;
+    line-height: 1.143;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -752,8 +756,16 @@ img {
   .team {
     padding: 94px 0;
   }
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
   .team-list-div {
     width: 270px;
+    margin-bottom: 0px;
   }
   .team-list-item:not(:last-child) {
     margin-right: 30px;
@@ -878,6 +890,12 @@ img {
 @media screen and (min-width: 1200px) {
   .customers {
     padding: 94px 0;
+  }
+  .customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    margin-bottom: 50px;
   }
   .customers-list-item {
     width: 170px;

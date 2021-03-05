@@ -72,8 +72,14 @@
     .team {
         padding: 94px 0;
     }
+    .team-title {
+        @include font($fw:700, $fs:36px, $lh:42px);
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
     .team-list-div {
         width: 270px;
+        margin-bottom: 0px;
     }
     .team-list-item {
         &:not(:last-child){

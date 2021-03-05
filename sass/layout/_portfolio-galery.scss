@@ -50,6 +50,9 @@
         }
     }
 .portfolio-list-item {
+    &:hover .portfolio-list-img {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
@@ -71,15 +74,17 @@
         height: 100%;
         background: rgba(33, 150, 243, 0.9);
         overflow: scroll;
-        transform: translateY(100%);
-        transition-property: transform;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        // transform: translateY(100%);
+        // transition-property: transform;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         .portfolio-list-item:hover & {
             transform: translateY(0);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
         .portfolio-list-item-link:focus & {
             transform: translateY(0);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
     }
 
@@ -92,9 +97,14 @@
 
     }   
         
-        .portfolio-image-div-text{
+        .portfolio-image-div-text {
             padding: 49px 24px;
         }
+                
+    .portfolio-image-div-p {
+        width: 306px;
+        height: 196px;
+    }
         @media screen and (max-width:1199px) {
             .portfolio-list-item {
                 &:nth-child(2n+1) {
@@ -109,8 +119,17 @@
         .portfolio {
             padding: 94px 0;
         }
+        .portfolio-image-div-p {
+            width: 322px;
+            height: 168px;
+        }
+        .portfolio-image-div-text {
+            width: 100%;
+            max-width: 370px;
+            padding: 63px 24px;
+        }
         .portfolio-list-div {
-            width: 370px;
+          width: 368px;
 
         }
         .portfolio-list-img {

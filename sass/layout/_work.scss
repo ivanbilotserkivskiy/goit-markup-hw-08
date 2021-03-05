@@ -19,20 +19,18 @@
     padding-bottom: 94px;
 }
 .work-title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
+    font-family: var(--text-font);
+ @include font ($fw:700, $fs:36px, $lh:42px);
+color: var(--title-color);
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-display: none;
 }
 .work-list-item {
     position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: -15px;
     &:not(:last-child){
         margin-right: 30px;
     }
@@ -46,9 +44,8 @@ display: none;
 }
 
 .work-list-item-images-text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142px;
+    font-family: var(--text-font);
+    @include font ($fw:700, $fs:14px, $lh:16px);
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;

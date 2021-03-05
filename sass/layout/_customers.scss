@@ -117,6 +117,10 @@
         .customers {
             padding: 94px 0;
         }
+        .customers-title {
+            @include font($fw:700, $fs:36px, $lh:42px);
+            margin-bottom: 50px;
+        }
         .customers-list-item {
             width: 170px;
             &:not(:last-child) {

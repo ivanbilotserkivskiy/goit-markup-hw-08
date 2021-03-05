@@ -241,6 +241,9 @@
     }
 }
 @media screen and (min-width: 1200px) {
+    .header {
+        height: 80px;
+    }
     .logotype {
         @include font ($fw:700, $fs:26px, $lh:31px);
     }
