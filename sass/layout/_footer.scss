@@ -11,7 +11,7 @@
     text-align: center;
     font-family: var(--logotype-font);
     color: var(--accent-color);
-    @include font-title ($fs:24px, $lh:28px);
+    @include font ($fw:700, $fs:24px, $lh:28px);
     letter-spacing: 0.03em;
     margin-bottom: 20px;
 }
@@ -48,7 +48,7 @@
 .footer-social-title{
     display: inline-block;
     font-family: var(--text-font);
-    @include font-title ($fs:14px, $lh:16px);
+    @include font ($fw:700, $fs:14px, $lh:16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -60,7 +60,7 @@
 .footer-form-label {
     display: inline-block;
     font-family: var(--text-font);
-    @include font-title ($fs:14px, $lh:16px);
+    @include font ($fw:700, $fs:14px, $lh:16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -99,7 +99,7 @@
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    @include font-title($fs:16px, $lh:30px);
+    @include font($fw:700, $fs:16px, $lh:30px);
 }
 .footer-form-button-icon {
     vertical-align: middle;

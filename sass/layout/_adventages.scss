@@ -18,7 +18,7 @@
 
 .adv-list-item-title {
     font-family: var(--text-font);
-    @include font-title($fs:14px, $lh:16px);
+    @include font($fw:700, $fs:14px, $lh:16px);
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
