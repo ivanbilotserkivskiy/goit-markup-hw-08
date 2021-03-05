@@ -36,9 +36,3 @@
 font-weight: $fw;
 font-size: $fs;
 line-height: decimal-round($lh/$fs, 3); }
-
-
-@mixin font-title ($fw:700, $fs:36px, $lh:42px) {
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: decimal-round($lh/$fs, 3); }
