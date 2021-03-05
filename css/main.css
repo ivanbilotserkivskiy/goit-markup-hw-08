@@ -1233,6 +1233,8 @@ img {
 }
 
 .modal-form-label {
+  width: 100%;
+  max-width: 370px;
   align-self: flex-start;
   font-weight: 400;
   font-size: 14px;
@@ -1244,7 +1246,8 @@ img {
 }
 
 .modal-form-input {
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: 40px;
   display: block;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1273,7 +1276,8 @@ img {
 }
 
 .modal-form-textarea {
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: 120px;
   resize: none;
   margin-bottom: 20px;
