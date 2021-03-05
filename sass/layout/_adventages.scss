@@ -7,11 +7,13 @@
     height: 70px;
 }
 .adv-list-icon-back-div {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;    
     @extend %align;
+    margin-bottom: 30px;
 }
 
 .adv-list-item-title {
@@ -38,12 +40,15 @@
         margin-bottom: 30px;
 
     }
+    @media screen and (max-width: 1199px) {
+        .adv-list-item {
+            &:nth-child(2n+1){
+                margin-right: auto;
+            }
+        }
+    }
     .adv-list-item {
         width: 354px;
-
-        &:nth-child(2n+1){
-            margin-right: auto;
-        }
     }
     .adv-list-item-title {
         text-align: start;
@@ -55,7 +60,20 @@
     }
     
 }
-
+@media screen and (min-width: 1200px) {
+    .adv {
+        padding-top: 94px;
+    }
+    .adv-list-icon-back-div {
+        width: 270px;
+    }
+    .adv-list-item {
+        width: 270px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+}
 
 
 

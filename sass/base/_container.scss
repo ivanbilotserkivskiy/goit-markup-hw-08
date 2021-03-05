@@ -12,15 +12,8 @@
         align-items: center;
         justify-content: space-between;
 }
-    // .adv & {
-    //     width: 450px;
-    // }
-    // .team & {
 
-    // }
-    // .portfolio & {
-        
-    // }
+
 }
 
 
@@ -45,7 +38,11 @@
     }
 }
   @media screen and (min-width: 1200px) {
+
     .container {
-      width: 1200px;
+      width: 1170px;
+      .footer & {
+        margin: 0 auto; 
+      }
     }
   }
