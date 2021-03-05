@@ -120,7 +120,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-right: auto;
+        margin-right: 165px;
         margin-left: 76px;
         margin-bottom: 0px;
     }
@@ -137,8 +137,13 @@
            flex-direction: column;
            align-self: center;
         }
-
+        .footer-form{
+            width: 100%;
+            max-width: 450px;
+        }
         .footer-form-div {
+            width: 100%;
+            max-width: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
