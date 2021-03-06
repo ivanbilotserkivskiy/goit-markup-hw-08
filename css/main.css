@@ -325,6 +325,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
   .burger-icon {
     display: none;
   }
@@ -337,7 +340,7 @@ img {
   .navigation {
     display: flex;
     align-items: center;
-    margin-right: 80px;
+    margin-right: auto;
   }
   .navigation-list {
     display: flex;
@@ -466,7 +469,7 @@ img {
     justify-content: center;
   }
   .navigation-list-item-curent::after {
-    top: 45px;
+    top: 46px;
   }
 }
 
